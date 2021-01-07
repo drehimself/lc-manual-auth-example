@@ -8,9 +8,9 @@
 <body>
     <div>
         <ul>
-            <li><a href="#">Dashboard</a></li>
+            <li><a href="{{ route('dashboard') }}">Dashboard</a></li>
             <li>
-                <form method="POST" action="#">
+                <form method="POST" action="{{ route('logout') }}">
                     @csrf
 
                     <a href="#" onclick="event.preventDefault();
